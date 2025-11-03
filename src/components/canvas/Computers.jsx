@@ -1,7 +1,7 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import CanvasLoader from "./Loader"; // 👈 import from Loader.jsx
+import CanvasLoader from "../Loader";
 
 // ======================
 // 3D Computer Model
@@ -23,8 +23,8 @@ const Computers = ({ isMobile }) => {
       />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.6 : 0.75}
-        position={isMobile ? [0, -2.5, -1.5] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.6 : 0.65}
+        position={isMobile ? [0, -2.5, -1.5] : [0, -4.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
