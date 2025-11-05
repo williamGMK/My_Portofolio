@@ -4,11 +4,9 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
@@ -23,6 +21,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  java,
+  csharp,
+  iot,
+  cloudserver,
 } from "../assets";
 
 export const navLinks = [
@@ -72,18 +74,12 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+
   {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -112,6 +108,23 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "java",
+    icon: java,
+  },
+  {
+    name: "csharp",
+    icon: csharp,
+  },
+
+  {
+    name: "iot",
+    icon: iot,
+  },
+  {
+    name: "cloudserver",
+    icon: cloudserver,
+  },
 ];
 
 const experiences = [
@@ -134,7 +147,7 @@ const experiences = [
   {
     title: "Web Developer",
     company_name: "N/A",
-    icon: creator,
+    icon: shopify,
     iconBg: "#383E56",
     date: "N/A",
     points: ["No work Experience For now."],
@@ -142,7 +155,7 @@ const experiences = [
   {
     title: "Full stack Developer",
     company_name: "N/A",
-    icon: creator,
+    icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: ["No work Experience For now."],

@@ -12,12 +12,14 @@ import CanvasLoader from "../Loader";
 
 const Ball = ({ imgUrl }) => {
   const [decal] = useTexture([imgUrl]);
-
+  {
+    /* Load texture from the provided image URL */
+  }
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[0, 0, 0.05]} intensity={0.5} />
-
+      <ambientLight intensity={0.25} />
+      <directionalLight position={[0, 0, 0.05]} />
+      {/* 3D Ball with Decal Texture */}
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
@@ -30,7 +32,6 @@ const Ball = ({ imgUrl }) => {
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
           flatShading
-          scale={1}
           map={decal}
         />
       </mesh>

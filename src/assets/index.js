@@ -20,6 +20,11 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import java from "./tech/java.png";
+import csharp from "./tech/csharp.png";
+import linux from "./tech/linux.png";
+import iot from "./tech/iot.png";
+import cloudserver from "./tech/cloudserver.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -47,6 +52,11 @@ export {
   javascript,
   mongodb,
   nodejs,
+  java,
+  csharp,
+  linux,
+  iot,
+  cloudserver,
   reactjs,
   redux,
   tailwind,
