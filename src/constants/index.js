@@ -165,27 +165,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Glodi helped me debug and rebuild my wedding invitation web app from scratch. He reorganized the backend, separated the frontend files, and set up MongoDB with Express routes — everything ran smoothly after that. Truly professional!",
+    name: "Don",
+    designation: "Web Developer",
+    company: "Freelance Project",
+    image: "",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "We were completely stuck on our LearnCampus project with the deadline just one day away. Glodi took over, built the system from the ground up, and guided the presentation. The entire team was impressed by his speed and clarity.",
+    name: "Sandy, Matt & Ryan",
+    designation: "Team Members",
+    company: "Belgium Campus",
+    image: "",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "After reviewing his project, I told Glodi, 'You have mastered the syntax!' His technical precision and problem-solving skills stood out throughout the course.",
+    name: "Sir Tendai",
+    designation: "Lecturer",
+    company: "Belgium Campus",
+    image: "",
   },
 ];
 
