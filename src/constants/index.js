@@ -20,11 +20,9 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
   java,
   csharp,
   iot,
-  cloudserver,
 } from "../assets";
 
 export const navLinks = [
@@ -92,10 +90,7 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+
   {
     name: "git",
     icon: git,
@@ -120,10 +115,6 @@ const technologies = [
   {
     name: "iot",
     icon: iot,
-  },
-  {
-    name: "cloudserver",
-    icon: cloudserver,
   },
 ];
 

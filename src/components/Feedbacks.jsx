@@ -14,21 +14,29 @@ const FeedbacksCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
+    className="bg-white p-10 rounded-3xl xs:w-[320px] w-full shadow-lg"
   >
-    <p className="text-white font-green text-[48px]">"</p>
+    <p className="text-black text-[48px] font-bold">"</p>
     <div className="mt-1">
-      <p className="text-white tracking-wider text-[12px]">{testimonial}</p>
-      <div className="mt-7 flex justify-between item-center  gap-1">
+      <p className="text-black tracking-wider text-[14px]">{testimonial}</p>
+      <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
-          <p className="text-white font-medium text-[12px]">
-            <span className="green-text-gradient">@</span>
+          <p className="text-black font-medium text-[14px]">
+            <span className="text-green-500">@</span>
             {name}
-            <p className="mt-1 text-secondary text-[10px]">
-              {designation} of {company}
-            </p>
+          </p>
+          <p className="mt-1 text-gray-600 text-[12px]">
+            {designation} of {company}
           </p>
         </div>
+        <img
+          src={
+            image ||
+            "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
+          }
+          alt={`feedback_by-${name}`}
+          className="w-10 h-10 rounded-full object-cover border border-gray-300"
+        />
       </div>
     </div>
   </motion.div>
@@ -36,36 +44,26 @@ const FeedbacksCard = ({
 
 const Feedbacks = () => {
   return (
-    <section className="mt-12 bg-gray-30 rounded-[20px]">
+    <div className="mt-12 bg-green-200 rounded-[20px]">
       <div
-        className={`bg-black rounded-2xl ${styles.padding} min-h-[300px] shadow-md`}
+        className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={`${styles.sectionSubText} text-green-600`}>
-            What others say
-          </p>
-          <h2 className={`${styles.sectionHeadText} text-green-900`}>
-            Testimonials.
-          </h2>
+          <p className={styles.sectionSubText}>What others say</p>
+          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
         </motion.div>
       </div>
 
-      <div
-        className={`mt-20 pb-14 ${styles.paddingX} gap-7 flex flex-wrap justify-center`}
-      >
+      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
           <FeedbacksCard
             key={testimonial.name}
             index={index}
-            testimonial={testimonial.testimonial}
-            name={testimonial.name}
-            designation={testimonial.designation}
-            company={testimonial.company}
-            image={testimonial.image}
+            {...testimonial}
           />
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
